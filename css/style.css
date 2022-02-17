@@ -1,0 +1,171 @@
+/* parametros fijos para todas las pages  */
+body{
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6em;
+    margin: 0;
+}
+.contenedor{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header{
+    background-color: rgba(70, 67, 67, 0.13);
+    color: darkgoldenrod;
+}
+nav{
+    background-color: #b0b0e0;
+    color: darkgoldenrod;
+}
+nav ul{
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline;
+}
+nav a{
+    color: rgb(71, 71, 231);
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 15px;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: #99738e;
+}
+#presentacion{
+    background-image: url("../imagenes/parallax1.jpg");
+    min-height: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#presentacion h2{
+    color: #2f2fa2;
+    font-size: 50px;
+    line-height: 1.1em;
+    padding-top: 30px;
+}
+main{
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+aside{
+    float: right;
+    width: 30%;
+    background-color: #f64c72;
+    color: #fff;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #2f2fa2;
+    color: #ccc;
+    text-align: center;
+    padding: 1px;
+    margin-top: 40px;
+}
+@media(max-width:600px){
+    main, aside, .contenedor{
+        width: 100%;
+        float: none;
+    }
+}
+
+
+/* fin parametros fijos en todas las page */
+
+/* inicio sobre nosotros*/
+
+.contenido{
+    width: 80%;
+    margin: auto;
+}
+.caja{
+    border-bottom: 8px #f64c72 double;
+    border-left: 8px #f64c72 double;
+    padding: 20px;
+    margin: 10px 0;
+}
+.caja h3{
+    text-decoration: underline;
+}
+
+/* fin sobre nosotros */
+
+/* contactos */
+
+.box{
+    background-image: url(../imagenes/parallax1.jpg);
+    background-size: 1380px 780px;
+    background-position: center top;
+    background-repeat: no-repeat;
+}   
+.formulario{
+    padding: 20px;
+}
+.formulario .form-group{
+    padding-bottom: 18px;
+}
+.formulario label{
+    display: block;
+}
+.formulario input [type="text"],
+     .formulario textarea{
+    width: 30%;
+    padding: 8px;
+}
+.envio{
+    background-color: #b0b0e0;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+}
+.envio:hover{
+    background-color: darkgoldenrod;
+    color: #000;
+}
+.envio:active{
+    background-color: #f64c72;
+    color: #000;
+}
+
+/* fin contacto */
+
+/* grid galeria*/
+
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #b0b0e0;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid-item:hover{
+    filter: opacity(0.9);
+    transform: scale(1.84);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    padding: 20px;
+    gap: 20px;
+    grid-auto-flow: dense;
+    @media (min-width: 600px)
+}
+
+
+
+
+
+
